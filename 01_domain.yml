@@ -1,4 +1,3 @@
-
 ---
 - hosts: domaincontroller
   vars:
@@ -7,11 +6,11 @@
   tasks:
   - name: Install AD-Tools and DNS
     win_feature:
-    name:
-    - DNS
-    - AD-Domain-Services
-    state: present
-    include_management_tools: yes
+      name:
+      - DNS
+      - AD-Domain-Services
+      state: present
+      include_management_tools: yes
     register: feature_install
 
   - name: Reboot if required
