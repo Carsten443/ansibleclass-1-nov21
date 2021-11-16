@@ -8,7 +8,7 @@
     community.windows.win_domain_group:
       name: corp
       scope: global
-    state: present
+      state: present
 
   - name: Create user
     community.windows.win_domain_user:
